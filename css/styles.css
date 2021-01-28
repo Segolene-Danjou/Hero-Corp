@@ -1,0 +1,161 @@
+#big-container {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+body {
+    text-align: center;
+    line-height: normal;
+    background-color: #d3d3d3;
+    font-family: sans-serif;
+    padding: 1rem 4.5rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-top:2px solid #5f0311;
+    border-bottom: 2px solid #5f0311;
+  }
+
+.header-subtitle {
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+main {
+    background-color: #eeeeee;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#logoHeroCorp {
+    width: 150px;
+}
+
+#presentationParagraphe {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+p{
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Last child est une pseudo classe */
+p:last-child{
+    /* tous le sparagraphes qui sont le dernier élément de leur parent */
+    margin-bottom: 0;
+}
+
+#show-airing {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    color: #5f0311;
+}
+
+.synopsisParagraphe {
+    text-align: left;
+}
+
+footer {
+    background-color: #eeeeee;
+    margin: 0.2rem;
+    padding: 1.5rem 0 4rem 0;
+}
+
+p div {
+    background-color: #eeeeee;
+}
+
+.actor-item {
+    display: block;
+    background-color: #eeeeee;
+    margin: 3px 50px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #5f0311;
+    text-transform:uppercase ;
+}
+
+.actor-item:hover {
+    /* change le style quand le texte est survolé */
+    display: block;
+    background-color: #eeeeee;
+    margin: 3px 50px;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform:uppercase ;
+    background-color: #5f0311;
+    color: white;
+    /* Si une propriété css change, par exemple via le hover, 
+    alors, effectue une transition de 0.25s */
+    transition: 0.25s all;
+}
+
+.picture-container {
+    max-width: 200px;
+    height: 275px;
+    border: 1px solid lightgray;
+    margin: 10px auto;
+/* on commence par faire une flexbox */
+    display: flex;
+    /* on veut aligner nos enfants verticalements */
+    flex-direction: column;
+    /* on veut changer l'espace entre les éléments sur l'axe de flex direction*/
+    justify-content: space-around;
+}
+
+.picture  {
+    width: 90%;
+}
+
+/*
+  on désactive les marges sur ce H3.
+  Comme classe est plus spécifique que balise,
+  cette règle aura la priorité
+*/
+.picture-title {
+    margin: 0 0;
+  }
